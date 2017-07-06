@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SFTableViewBaseItem.h"
+@class SFTableViewSectionObject;
+@protocol SFTableViewDataSource <UITableViewDataSource>
+@optional
+- (SFTableViewBaseItem *)tableView:(UITableView *)tableView objectForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (Class)tableView:(UITableView*)tableView cellClassForObject:(SFTableViewBaseItem *)object;
 
-@interface SFTableViewDataSource : NSObject
+@end
+@interface SFTableViewDataSource : NSObject<SFTableViewDataSource>
 @property (nonatomic, strong) NSArray *sectionArray;
 @end
