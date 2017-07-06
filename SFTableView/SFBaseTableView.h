@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol SFBaseTableViewDelegate <UITableViewDelegate>
+@optional
+-(void)didSelectedItem:(id)item indexPath:(NSIndexPath *)indexPath;
+-(void)headerViewForSectionObject:(id)sectionObject atSection:(NSInteger)section;
+-(void)pullDownRefreshAction;
+-(void)pullUpLoadMoreAction;
+@end
 @interface SFBaseTableView : UITableView
 
 @end
