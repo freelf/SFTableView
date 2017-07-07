@@ -14,6 +14,9 @@
 		2D7236DA1F04647200C6AF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D7236D91F04647200C6AF7D /* Assets.xcassets */; };
 		2D7236DD1F04647300C6AF7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D7236DB1F04647300C6AF7D /* LaunchScreen.storyboard */; };
 		2D7236E61F046A6D00C6AF7D /* SFBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7236E51F046A6D00C6AF7D /* SFBaseTableView.m */; };
+		2D86F2AA1F0F2DD900773DEB /* SFBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86F2A91F0F2DD900773DEB /* SFBaseTableViewCell.m */; };
+		2D86F2AD1F0F652600773DEB /* ViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86F2AC1F0F652600773DEB /* ViewControllerDataSource.m */; };
+		2D86F2B01F0F6A9600773DEB /* SFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86F2AF1F0F6A9600773DEB /* SFTableViewController.m */; };
 		2D942CFF1F0E0E7A00D86380 /* SFTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D942CFE1F0E0E7A00D86380 /* SFTableViewDataSource.m */; };
 		2DD9FE151F0E737300BCD136 /* SFTableViewSectionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9FE141F0E737300BCD136 /* SFTableViewSectionObject.m */; };
 		2DD9FE191F0E83D800BCD136 /* SFTableViewBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9FE181F0E83D800BCD136 /* SFTableViewBaseItem.m */; };
@@ -32,6 +35,12 @@
 		2D7236DE1F04647300C6AF7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D7236E41F046A6D00C6AF7D /* SFBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBaseTableView.h; sourceTree = "<group>"; };
 		2D7236E51F046A6D00C6AF7D /* SFBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBaseTableView.m; sourceTree = "<group>"; };
+		2D86F2A81F0F2DD900773DEB /* SFBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBaseTableViewCell.h; sourceTree = "<group>"; };
+		2D86F2A91F0F2DD900773DEB /* SFBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBaseTableViewCell.m; sourceTree = "<group>"; };
+		2D86F2AB1F0F652600773DEB /* ViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerDataSource.h; sourceTree = "<group>"; };
+		2D86F2AC1F0F652600773DEB /* ViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerDataSource.m; sourceTree = "<group>"; };
+		2D86F2AE1F0F6A9600773DEB /* SFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTableViewController.h; sourceTree = "<group>"; };
+		2D86F2AF1F0F6A9600773DEB /* SFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTableViewController.m; sourceTree = "<group>"; };
 		2D942CFD1F0E0E7A00D86380 /* SFTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTableViewDataSource.h; sourceTree = "<group>"; };
 		2D942CFE1F0E0E7A00D86380 /* SFTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTableViewDataSource.m; sourceTree = "<group>"; };
 		2DD9FE131F0E737300BCD136 /* SFTableViewSectionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTableViewSectionObject.h; sourceTree = "<group>"; };
@@ -75,6 +84,8 @@
 				2D7236D11F04647200C6AF7D /* AppDelegate.m */,
 				2D7236D31F04647200C6AF7D /* ViewController.h */,
 				2D7236D41F04647200C6AF7D /* ViewController.m */,
+				2D86F2AB1F0F652600773DEB /* ViewControllerDataSource.h */,
+				2D86F2AC1F0F652600773DEB /* ViewControllerDataSource.m */,
 				2D7236E41F046A6D00C6AF7D /* SFBaseTableView.h */,
 				2D7236E51F046A6D00C6AF7D /* SFBaseTableView.m */,
 				2D942CFD1F0E0E7A00D86380 /* SFTableViewDataSource.h */,
@@ -83,6 +94,10 @@
 				2DD9FE141F0E737300BCD136 /* SFTableViewSectionObject.m */,
 				2DD9FE171F0E83D800BCD136 /* SFTableViewBaseItem.h */,
 				2DD9FE181F0E83D800BCD136 /* SFTableViewBaseItem.m */,
+				2D86F2A81F0F2DD900773DEB /* SFBaseTableViewCell.h */,
+				2D86F2A91F0F2DD900773DEB /* SFBaseTableViewCell.m */,
+				2D86F2AE1F0F6A9600773DEB /* SFTableViewController.h */,
+				2D86F2AF1F0F6A9600773DEB /* SFTableViewController.m */,
 				2D7236D61F04647200C6AF7D /* Main.storyboard */,
 				2D7236D91F04647200C6AF7D /* Assets.xcassets */,
 				2D7236DB1F04647300C6AF7D /* LaunchScreen.storyboard */,
@@ -173,13 +188,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D86F2AD1F0F652600773DEB /* ViewControllerDataSource.m in Sources */,
 				2DD9FE191F0E83D800BCD136 /* SFTableViewBaseItem.m in Sources */,
+				2D86F2B01F0F6A9600773DEB /* SFTableViewController.m in Sources */,
 				2D7236D51F04647200C6AF7D /* ViewController.m in Sources */,
 				2D942CFF1F0E0E7A00D86380 /* SFTableViewDataSource.m in Sources */,
 				2D7236D21F04647200C6AF7D /* AppDelegate.m in Sources */,
 				2D7236CF1F04647200C6AF7D /* main.m in Sources */,
 				2D7236E61F046A6D00C6AF7D /* SFBaseTableView.m in Sources */,
 				2DD9FE151F0E737300BCD136 /* SFTableViewSectionObject.m in Sources */,
+				2D86F2AA1F0F2DD900773DEB /* SFBaseTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

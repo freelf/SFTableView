@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-FOUNDATION_EXTERN CGFloat const cellInvalidHeiht;
+FOUNDATION_EXTERN CGFloat const cellInvalidHeight;
 @interface SFTableViewBaseItem : NSObject
-@property (nonatomic, assign) CGFloat cellHeiht;
+@property (nonatomic, assign) CGFloat cellHeight;
 
-@property (nonatomic, strong) Class cellClass;
+
 @property (nonatomic, strong) UIImage *itemImage;
 @property (nonatomic, copy) NSString *itemTitle;
 @property (nonatomic, copy) NSString *itemSubTitle;
