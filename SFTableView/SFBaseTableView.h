@@ -18,5 +18,9 @@
 @interface SFBaseTableView : UITableView<UITableViewDelegate>
 @property (nonatomic, weak) id <SFTableViewDataSource> sfDataSource;
 @property (nonatomic, weak) id <SFBaseTableViewDelegate> sfDelegate;
+@property (nonatomic, assign,getter = isNeedPullDownRefreshAction) BOOL needPullDownRefreshAction;
+@property (nonatomic, assign,getter = isNeedPullUpLoadMoreAction) BOOL needPullUpLoadMoreAction;
 
+-(void)stopRefreshAction;
+-(void)triggerRefreshing;
 @end
