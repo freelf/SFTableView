@@ -7,7 +7,7 @@
 //
 
 #import "SFTableViewBaseItem.h"
-CGFloat const cellInvalidHeiht = -1;
+CGFloat const cellInvalidHeight = -1;
 @implementation SFTableViewBaseItem
 - (instancetype)init
 {
@@ -24,8 +24,7 @@ CGFloat const cellInvalidHeiht = -1;
 {
     self = [super init];
     if (self == nil) return nil;
-    self.cellClass = [UITableViewCell class];
-    self.cellHeiht = cellInvalidHeiht;
+    self.cellHeight = cellInvalidHeight;
     self.itemImage = itemImage;
     self.itemTitle = itemTitle;
     self.itemSubTitle = subTitle;

@@ -14,9 +14,24 @@
 		2D7236DA1F04647200C6AF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D7236D91F04647200C6AF7D /* Assets.xcassets */; };
 		2D7236DD1F04647300C6AF7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D7236DB1F04647300C6AF7D /* LaunchScreen.storyboard */; };
 		2D7236E61F046A6D00C6AF7D /* SFBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7236E51F046A6D00C6AF7D /* SFBaseTableView.m */; };
+		2D86F2AA1F0F2DD900773DEB /* SFBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86F2A91F0F2DD900773DEB /* SFBaseTableViewCell.m */; };
+		2D86F2AD1F0F652600773DEB /* ViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86F2AC1F0F652600773DEB /* ViewControllerDataSource.m */; };
+		2D86F2B01F0F6A9600773DEB /* SFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86F2AF1F0F6A9600773DEB /* SFTableViewController.m */; };
 		2D942CFF1F0E0E7A00D86380 /* SFTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D942CFE1F0E0E7A00D86380 /* SFTableViewDataSource.m */; };
+		2D9D41D31F13740200AEA861 /* QPAPIProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D41BE1F13740200AEA861 /* QPAPIProxy.m */; };
+		2D9D41D41F13740200AEA861 /* QPAPIBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D41C11F13740200AEA861 /* QPAPIBaseManager.m */; };
+		2D9D41D51F13740200AEA861 /* NSObject+QPNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D41C41F13740200AEA861 /* NSObject+QPNetworking.m */; };
+		2D9D41D61F13740200AEA861 /* NSURLRequest+QPNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D41C61F13740200AEA861 /* NSURLRequest+QPNetworking.m */; };
+		2D9D41D71F13740200AEA861 /* QPCommonParametersGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D41CA1F13740200AEA861 /* QPCommonParametersGenerator.m */; };
+		2D9D41D81F13740200AEA861 /* QPRequestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D41CC1F13740200AEA861 /* QPRequestGenerator.m */; };
+		2D9D41D91F13740200AEA861 /* QPNetworkingConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D9D41CF1F13740200AEA861 /* QPNetworkingConfiguration.plist */; };
+		2D9D41DA1F13740200AEA861 /* QPURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D41D21F13740200AEA861 /* QPURLResponse.m */; };
+		2D9D41DD1F13757200AEA861 /* SFBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D41DC1F13757200AEA861 /* SFBaseModel.m */; };
+		2D9D41E01F1375CF00AEA861 /* SFBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D41DF1F1375CF00AEA861 /* SFBaseItem.m */; };
+		2D9D41E31F138C6900AEA861 /* QPNetAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D41E21F138C6900AEA861 /* QPNetAPIManager.m */; };
 		2DD9FE151F0E737300BCD136 /* SFTableViewSectionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9FE141F0E737300BCD136 /* SFTableViewSectionObject.m */; };
 		2DD9FE191F0E83D800BCD136 /* SFTableViewBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9FE181F0E83D800BCD136 /* SFTableViewBaseItem.m */; };
+		983F3416D881A1A678F9B446 /* libPods-SFTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA4937B145374F694898039 /* libPods-SFTableView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,13 +47,44 @@
 		2D7236DE1F04647300C6AF7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D7236E41F046A6D00C6AF7D /* SFBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBaseTableView.h; sourceTree = "<group>"; };
 		2D7236E51F046A6D00C6AF7D /* SFBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBaseTableView.m; sourceTree = "<group>"; };
+		2D86F2A81F0F2DD900773DEB /* SFBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBaseTableViewCell.h; sourceTree = "<group>"; };
+		2D86F2A91F0F2DD900773DEB /* SFBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBaseTableViewCell.m; sourceTree = "<group>"; };
+		2D86F2AB1F0F652600773DEB /* ViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerDataSource.h; sourceTree = "<group>"; };
+		2D86F2AC1F0F652600773DEB /* ViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerDataSource.m; sourceTree = "<group>"; };
+		2D86F2AE1F0F6A9600773DEB /* SFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTableViewController.h; sourceTree = "<group>"; };
+		2D86F2AF1F0F6A9600773DEB /* SFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTableViewController.m; sourceTree = "<group>"; };
 		2D942CFD1F0E0E7A00D86380 /* SFTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTableViewDataSource.h; sourceTree = "<group>"; };
 		2D942CFE1F0E0E7A00D86380 /* SFTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTableViewDataSource.m; sourceTree = "<group>"; };
+		2D9D41BD1F13740200AEA861 /* QPAPIProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPAPIProxy.h; sourceTree = "<group>"; };
+		2D9D41BE1F13740200AEA861 /* QPAPIProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPAPIProxy.m; sourceTree = "<group>"; };
+		2D9D41C01F13740200AEA861 /* QPAPIBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPAPIBaseManager.h; sourceTree = "<group>"; };
+		2D9D41C11F13740200AEA861 /* QPAPIBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPAPIBaseManager.m; sourceTree = "<group>"; };
+		2D9D41C31F13740200AEA861 /* NSObject+QPNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+QPNetworking.h"; sourceTree = "<group>"; };
+		2D9D41C41F13740200AEA861 /* NSObject+QPNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+QPNetworking.m"; sourceTree = "<group>"; };
+		2D9D41C51F13740200AEA861 /* NSURLRequest+QPNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+QPNetworking.h"; sourceTree = "<group>"; };
+		2D9D41C61F13740200AEA861 /* NSURLRequest+QPNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+QPNetworking.m"; sourceTree = "<group>"; };
+		2D9D41C91F13740200AEA861 /* QPCommonParametersGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPCommonParametersGenerator.h; sourceTree = "<group>"; };
+		2D9D41CA1F13740200AEA861 /* QPCommonParametersGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPCommonParametersGenerator.m; sourceTree = "<group>"; };
+		2D9D41CB1F13740200AEA861 /* QPRequestGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPRequestGenerator.h; sourceTree = "<group>"; };
+		2D9D41CC1F13740200AEA861 /* QPRequestGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPRequestGenerator.m; sourceTree = "<group>"; };
+		2D9D41CE1F13740200AEA861 /* QPNetworkingConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPNetworkingConfiguration.h; sourceTree = "<group>"; };
+		2D9D41CF1F13740200AEA861 /* QPNetworkingConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QPNetworkingConfiguration.plist; sourceTree = "<group>"; };
+		2D9D41D11F13740200AEA861 /* QPURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPURLResponse.h; sourceTree = "<group>"; };
+		2D9D41D21F13740200AEA861 /* QPURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPURLResponse.m; sourceTree = "<group>"; };
+		2D9D41DB1F13757200AEA861 /* SFBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBaseModel.h; sourceTree = "<group>"; };
+		2D9D41DC1F13757200AEA861 /* SFBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBaseModel.m; sourceTree = "<group>"; };
+		2D9D41DE1F1375CF00AEA861 /* SFBaseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBaseItem.h; sourceTree = "<group>"; };
+		2D9D41DF1F1375CF00AEA861 /* SFBaseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBaseItem.m; sourceTree = "<group>"; };
+		2D9D41E11F138C6900AEA861 /* QPNetAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPNetAPIManager.h; sourceTree = "<group>"; };
+		2D9D41E21F138C6900AEA861 /* QPNetAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPNetAPIManager.m; sourceTree = "<group>"; };
 		2DD9FE131F0E737300BCD136 /* SFTableViewSectionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTableViewSectionObject.h; sourceTree = "<group>"; };
 		2DD9FE141F0E737300BCD136 /* SFTableViewSectionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTableViewSectionObject.m; sourceTree = "<group>"; };
 		2DD9FE161F0E82BE00BCD136 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2DD9FE171F0E83D800BCD136 /* SFTableViewBaseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTableViewBaseItem.h; sourceTree = "<group>"; };
 		2DD9FE181F0E83D800BCD136 /* SFTableViewBaseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTableViewBaseItem.m; sourceTree = "<group>"; };
+		4D0BA4EE6BB2EDB743F432AC /* Pods-SFTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SFTableView/Pods-SFTableView.release.xcconfig"; sourceTree = "<group>"; };
+		5F3DEA8180D2A5A60453F6C9 /* Pods-SFTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SFTableView/Pods-SFTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		FBA4937B145374F694898039 /* libPods-SFTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SFTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983F3416D881A1A678F9B446 /* libPods-SFTableView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +104,8 @@
 			children = (
 				2D7236CC1F04647200C6AF7D /* SFTableView */,
 				2D7236CB1F04647200C6AF7D /* Products */,
+				72A471EE40DFD5EC33558F93 /* Pods */,
+				FB8520897CC88443BBED8FC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,10 +120,13 @@
 		2D7236CC1F04647200C6AF7D /* SFTableView */ = {
 			isa = PBXGroup;
 			children = (
+				2D9D41BB1F13740200AEA861 /* QPNetworking */,
 				2D7236D01F04647200C6AF7D /* AppDelegate.h */,
 				2D7236D11F04647200C6AF7D /* AppDelegate.m */,
 				2D7236D31F04647200C6AF7D /* ViewController.h */,
 				2D7236D41F04647200C6AF7D /* ViewController.m */,
+				2D86F2AB1F0F652600773DEB /* ViewControllerDataSource.h */,
+				2D86F2AC1F0F652600773DEB /* ViewControllerDataSource.m */,
 				2D7236E41F046A6D00C6AF7D /* SFBaseTableView.h */,
 				2D7236E51F046A6D00C6AF7D /* SFBaseTableView.m */,
 				2D942CFD1F0E0E7A00D86380 /* SFTableViewDataSource.h */,
@@ -83,6 +135,16 @@
 				2DD9FE141F0E737300BCD136 /* SFTableViewSectionObject.m */,
 				2DD9FE171F0E83D800BCD136 /* SFTableViewBaseItem.h */,
 				2DD9FE181F0E83D800BCD136 /* SFTableViewBaseItem.m */,
+				2D86F2A81F0F2DD900773DEB /* SFBaseTableViewCell.h */,
+				2D86F2A91F0F2DD900773DEB /* SFBaseTableViewCell.m */,
+				2D86F2AE1F0F6A9600773DEB /* SFTableViewController.h */,
+				2D86F2AF1F0F6A9600773DEB /* SFTableViewController.m */,
+				2D9D41DB1F13757200AEA861 /* SFBaseModel.h */,
+				2D9D41DC1F13757200AEA861 /* SFBaseModel.m */,
+				2D9D41DE1F1375CF00AEA861 /* SFBaseItem.h */,
+				2D9D41DF1F1375CF00AEA861 /* SFBaseItem.m */,
+				2D9D41E11F138C6900AEA861 /* QPNetAPIManager.h */,
+				2D9D41E21F138C6900AEA861 /* QPNetAPIManager.m */,
 				2D7236D61F04647200C6AF7D /* Main.storyboard */,
 				2D7236D91F04647200C6AF7D /* Assets.xcassets */,
 				2D7236DB1F04647300C6AF7D /* LaunchScreen.storyboard */,
@@ -101,6 +163,102 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2D9D41BB1F13740200AEA861 /* QPNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				2D9D41BC1F13740200AEA861 /* APIProxy */,
+				2D9D41BF1F13740200AEA861 /* BaseAPIManager */,
+				2D9D41C21F13740200AEA861 /* Categroies */,
+				2D9D41C71F13740200AEA861 /* QPNetGenerators */,
+				2D9D41CD1F13740200AEA861 /* QPNetworkingConfiguration */,
+				2D9D41D01F13740200AEA861 /* QPURLResponse */,
+			);
+			path = QPNetworking;
+			sourceTree = "<group>";
+		};
+		2D9D41BC1F13740200AEA861 /* APIProxy */ = {
+			isa = PBXGroup;
+			children = (
+				2D9D41BD1F13740200AEA861 /* QPAPIProxy.h */,
+				2D9D41BE1F13740200AEA861 /* QPAPIProxy.m */,
+			);
+			path = APIProxy;
+			sourceTree = "<group>";
+		};
+		2D9D41BF1F13740200AEA861 /* BaseAPIManager */ = {
+			isa = PBXGroup;
+			children = (
+				2D9D41C01F13740200AEA861 /* QPAPIBaseManager.h */,
+				2D9D41C11F13740200AEA861 /* QPAPIBaseManager.m */,
+			);
+			path = BaseAPIManager;
+			sourceTree = "<group>";
+		};
+		2D9D41C21F13740200AEA861 /* Categroies */ = {
+			isa = PBXGroup;
+			children = (
+				2D9D41C31F13740200AEA861 /* NSObject+QPNetworking.h */,
+				2D9D41C41F13740200AEA861 /* NSObject+QPNetworking.m */,
+				2D9D41C51F13740200AEA861 /* NSURLRequest+QPNetworking.h */,
+				2D9D41C61F13740200AEA861 /* NSURLRequest+QPNetworking.m */,
+			);
+			path = Categroies;
+			sourceTree = "<group>";
+		};
+		2D9D41C71F13740200AEA861 /* QPNetGenerators */ = {
+			isa = PBXGroup;
+			children = (
+				2D9D41C81F13740200AEA861 /* QPCommonParametersGenerator */,
+				2D9D41CB1F13740200AEA861 /* QPRequestGenerator.h */,
+				2D9D41CC1F13740200AEA861 /* QPRequestGenerator.m */,
+			);
+			path = QPNetGenerators;
+			sourceTree = "<group>";
+		};
+		2D9D41C81F13740200AEA861 /* QPCommonParametersGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				2D9D41C91F13740200AEA861 /* QPCommonParametersGenerator.h */,
+				2D9D41CA1F13740200AEA861 /* QPCommonParametersGenerator.m */,
+			);
+			path = QPCommonParametersGenerator;
+			sourceTree = "<group>";
+		};
+		2D9D41CD1F13740200AEA861 /* QPNetworkingConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				2D9D41CE1F13740200AEA861 /* QPNetworkingConfiguration.h */,
+				2D9D41CF1F13740200AEA861 /* QPNetworkingConfiguration.plist */,
+			);
+			path = QPNetworkingConfiguration;
+			sourceTree = "<group>";
+		};
+		2D9D41D01F13740200AEA861 /* QPURLResponse */ = {
+			isa = PBXGroup;
+			children = (
+				2D9D41D11F13740200AEA861 /* QPURLResponse.h */,
+				2D9D41D21F13740200AEA861 /* QPURLResponse.m */,
+			);
+			path = QPURLResponse;
+			sourceTree = "<group>";
+		};
+		72A471EE40DFD5EC33558F93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F3DEA8180D2A5A60453F6C9 /* Pods-SFTableView.debug.xcconfig */,
+				4D0BA4EE6BB2EDB743F432AC /* Pods-SFTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB8520897CC88443BBED8FC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBA4937B145374F694898039 /* libPods-SFTableView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,9 +266,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D7236E11F04647300C6AF7D /* Build configuration list for PBXNativeTarget "SFTableView" */;
 			buildPhases = (
+				06F1021CA37EF31D1C2CE894 /* [CP] Check Pods Manifest.lock */,
 				2D7236C61F04647200C6AF7D /* Sources */,
 				2D7236C71F04647200C6AF7D /* Frameworks */,
 				2D7236C81F04647200C6AF7D /* Resources */,
+				035E5F4C9E7E7E8910A43608 /* [CP] Embed Pods Frameworks */,
+				8A21936B27432A91B2FD8676 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,24 +323,86 @@
 			files = (
 				2D7236DD1F04647300C6AF7D /* LaunchScreen.storyboard in Resources */,
 				2D7236DA1F04647200C6AF7D /* Assets.xcassets in Resources */,
+				2D9D41D91F13740200AEA861 /* QPNetworkingConfiguration.plist in Resources */,
 				2D7236D81F04647200C6AF7D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		035E5F4C9E7E7E8910A43608 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SFTableView/Pods-SFTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		06F1021CA37EF31D1C2CE894 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A21936B27432A91B2FD8676 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SFTableView/Pods-SFTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2D7236C61F04647200C6AF7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D9D41D81F13740200AEA861 /* QPRequestGenerator.m in Sources */,
+				2D86F2AD1F0F652600773DEB /* ViewControllerDataSource.m in Sources */,
+				2D9D41D61F13740200AEA861 /* NSURLRequest+QPNetworking.m in Sources */,
+				2D9D41D71F13740200AEA861 /* QPCommonParametersGenerator.m in Sources */,
 				2DD9FE191F0E83D800BCD136 /* SFTableViewBaseItem.m in Sources */,
+				2D9D41E31F138C6900AEA861 /* QPNetAPIManager.m in Sources */,
+				2D9D41D41F13740200AEA861 /* QPAPIBaseManager.m in Sources */,
+				2D86F2B01F0F6A9600773DEB /* SFTableViewController.m in Sources */,
+				2D9D41E01F1375CF00AEA861 /* SFBaseItem.m in Sources */,
 				2D7236D51F04647200C6AF7D /* ViewController.m in Sources */,
 				2D942CFF1F0E0E7A00D86380 /* SFTableViewDataSource.m in Sources */,
+				2D9D41D31F13740200AEA861 /* QPAPIProxy.m in Sources */,
 				2D7236D21F04647200C6AF7D /* AppDelegate.m in Sources */,
 				2D7236CF1F04647200C6AF7D /* main.m in Sources */,
+				2D9D41D51F13740200AEA861 /* NSObject+QPNetworking.m in Sources */,
 				2D7236E61F046A6D00C6AF7D /* SFBaseTableView.m in Sources */,
 				2DD9FE151F0E737300BCD136 /* SFTableViewSectionObject.m in Sources */,
+				2D9D41DD1F13757200AEA861 /* SFBaseModel.m in Sources */,
+				2D9D41DA1F13740200AEA861 /* QPURLResponse.m in Sources */,
+				2D86F2AA1F0F2DD900773DEB /* SFBaseTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +520,7 @@
 		};
 		2D7236E21F04647300C6AF7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F3DEA8180D2A5A60453F6C9 /* Pods-SFTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LDY66CZNGW;
@@ -310,6 +534,7 @@
 		};
 		2D7236E31F04647300C6AF7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D0BA4EE6BB2EDB743F432AC /* Pods-SFTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LDY66CZNGW;

@@ -7,18 +7,20 @@
 //
 
 #import "ViewController.h"
-
+#import "SFBaseTableView.h"
+#import "ViewControllerDataSource.h"
 @interface ViewController ()
-
-
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+-(void)creatDataSource
+{
+    self.dataSource = [[ViewControllerDataSource alloc]init];
     
 }
-
 
 @end
