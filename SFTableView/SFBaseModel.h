@@ -10,12 +10,22 @@
 #import "QPNetAPIManager.h"
 @class SFBaseModel;
 typedef void(^SFModelBlock)(SFBaseModel *);
-@interface SFBaseModel : NSObject
+@protocol SFBaseModelDelegate <NSObject>
+@required
+-(void)requestDidSuccess;
+-(void)requestDidFailed:(QPAPIManagerErrorType)errorType;
+
+@end
+@interface SFBaseModel : NSObject<QPAPIManagerParamSource,QPAPIManagerCallBackDelegate>
 //自动解析数据，可能在不同线程中访问，所以设置为atomic
 @property (assign,atomic) Class parseDataClassType;
 
 @property (nonatomic, copy) SFModelBlock completionBlock;
 
 @property (nonatomic, strong) QPNetAPIManager *serverApi;
+
+@property (nonatomic, strong) NSDictionary *parameters;
+
 -(instancetype)initWithType:(NSInteger)type commond:(NSInteger)commond;
+
 @end

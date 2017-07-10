@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A98ED143784EC168693A77C9F8D22EF7'
+               BlueprintIdentifier = '73EAF1898BF2CD253C16F2AEF43809F4'
                BlueprintName = 'Pods-SFTableView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-SFTableView.a'>

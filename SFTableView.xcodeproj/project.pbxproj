@@ -27,7 +27,6 @@
 		2D9D41D91F13740200AEA861 /* QPNetworkingConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D9D41CF1F13740200AEA861 /* QPNetworkingConfiguration.plist */; };
 		2D9D41DA1F13740200AEA861 /* QPURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D41D21F13740200AEA861 /* QPURLResponse.m */; };
 		2D9D41DD1F13757200AEA861 /* SFBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D41DC1F13757200AEA861 /* SFBaseModel.m */; };
-		2D9D41E01F1375CF00AEA861 /* SFBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D41DF1F1375CF00AEA861 /* SFBaseItem.m */; };
 		2D9D41E31F138C6900AEA861 /* QPNetAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D41E21F138C6900AEA861 /* QPNetAPIManager.m */; };
 		2DD9FE151F0E737300BCD136 /* SFTableViewSectionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9FE141F0E737300BCD136 /* SFTableViewSectionObject.m */; };
 		2DD9FE191F0E83D800BCD136 /* SFTableViewBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9FE181F0E83D800BCD136 /* SFTableViewBaseItem.m */; };
@@ -73,8 +72,6 @@
 		2D9D41D21F13740200AEA861 /* QPURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPURLResponse.m; sourceTree = "<group>"; };
 		2D9D41DB1F13757200AEA861 /* SFBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBaseModel.h; sourceTree = "<group>"; };
 		2D9D41DC1F13757200AEA861 /* SFBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBaseModel.m; sourceTree = "<group>"; };
-		2D9D41DE1F1375CF00AEA861 /* SFBaseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBaseItem.h; sourceTree = "<group>"; };
-		2D9D41DF1F1375CF00AEA861 /* SFBaseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBaseItem.m; sourceTree = "<group>"; };
 		2D9D41E11F138C6900AEA861 /* QPNetAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPNetAPIManager.h; sourceTree = "<group>"; };
 		2D9D41E21F138C6900AEA861 /* QPNetAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPNetAPIManager.m; sourceTree = "<group>"; };
 		2DD9FE131F0E737300BCD136 /* SFTableViewSectionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTableViewSectionObject.h; sourceTree = "<group>"; };
@@ -141,8 +138,6 @@
 				2D86F2AF1F0F6A9600773DEB /* SFTableViewController.m */,
 				2D9D41DB1F13757200AEA861 /* SFBaseModel.h */,
 				2D9D41DC1F13757200AEA861 /* SFBaseModel.m */,
-				2D9D41DE1F1375CF00AEA861 /* SFBaseItem.h */,
-				2D9D41DF1F1375CF00AEA861 /* SFBaseItem.m */,
 				2D9D41E11F138C6900AEA861 /* QPNetAPIManager.h */,
 				2D9D41E21F138C6900AEA861 /* QPNetAPIManager.m */,
 				2D7236D61F04647200C6AF7D /* Main.storyboard */,
@@ -391,7 +386,6 @@
 				2D9D41E31F138C6900AEA861 /* QPNetAPIManager.m in Sources */,
 				2D9D41D41F13740200AEA861 /* QPAPIBaseManager.m in Sources */,
 				2D86F2B01F0F6A9600773DEB /* SFTableViewController.m in Sources */,
-				2D9D41E01F1375CF00AEA861 /* SFBaseItem.m in Sources */,
 				2D7236D51F04647200C6AF7D /* ViewController.m in Sources */,
 				2D942CFF1F0E0E7A00D86380 /* SFTableViewDataSource.m in Sources */,
 				2D9D41D31F13740200AEA861 /* QPAPIProxy.m in Sources */,
