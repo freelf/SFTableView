@@ -20,7 +20,7 @@
 @property (nonatomic, weak) id <SFBaseTableViewDelegate> sfDelegate;
 @property (nonatomic, assign,getter = isNeedPullDownRefreshAction) BOOL needPullDownRefreshAction;
 @property (nonatomic, assign,getter = isNeedPullUpLoadMoreAction) BOOL needPullUpLoadMoreAction;
-
+-(void)stopWithNoMoreData;
 -(void)stopRefreshAction;
 -(void)triggerRefreshing;
 @end

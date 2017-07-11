@@ -62,6 +62,10 @@
     }
 }
 #pragma mark - Public Method
+-(void)stopWithNoMoreData
+{
+    [self.mj_footer endRefreshingWithNoMoreData];
+}
 -(void)stopRefreshAction
 {
     if ([self.mj_header isRefreshing]) {

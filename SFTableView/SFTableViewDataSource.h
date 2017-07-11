@@ -17,4 +17,7 @@
 @end
 @interface SFTableViewDataSource : NSObject<SFTableViewDataSource>
 @property (nonatomic, strong) NSArray *sectionArray;
+
+-(void)clearAllItems;
+-(void)appendItem:(SFTableViewBaseItem *)item;
 @end

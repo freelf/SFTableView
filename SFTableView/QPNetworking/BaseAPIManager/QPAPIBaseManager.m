@@ -7,7 +7,7 @@
 //
 
 #import "QPAPIBaseManager.h"
-#import "QPUserData.h"
+
 #import "QPAPIProxy.h"
 
 #define QPCallAPI(REQUEST_METHOD, REQUEST_ID)                                                   \
@@ -81,16 +81,16 @@ __strong typeof(weakSelf) strongSelf = weakSelf;                                
 	NSDictionary *parameters = [self.paramSource paramsForApi:self];
 	NSDictionary* apiParam = [self reformParams:parameters];
 	// 如果是数据debug状态的话，直接返回成功回调
-	if (DataDebug && [apiParam[kQPNetworkingMsgTypeKey] intValue] >= MESSAGE_TYPE_RACE) {
-		// 模拟网络请求，延迟一会再回调
-		dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-			[self.delegate managerCallAPIDidSuccess:self];
-		});
-		return -9527;
-	} else {
+//	if (DataDebug && [apiParam[kQPNetworkingMsgTypeKey] intValue] >= MESSAGE_TYPE_RACE) {
+//		// 模拟网络请求，延迟一会再回调
+//		dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//			[self.delegate managerCallAPIDidSuccess:self];
+//		});
+//		return -9527;
+//	} else {
 		NSInteger requestId = [self loadDataWithParameters:parameters];
 		return requestId;
-	}
+//	}
 }
 -(NSInteger)loadDataWithParameters:(NSDictionary *)parameters
 {
@@ -115,14 +115,14 @@ __strong typeof(weakSelf) strongSelf = weakSelf;                                
     BOOL result = YES;
 	// 处理消息通知
 	NSDictionary* alertDic = response.content[@"msg_next"][@"msg_data"];
-	if (alertDic) {
-		if (alertDic[@"alert"]) {
-			[QPUserData sharedInstance].alertnum = [alertDic[@"alert"] intValue];
-			[QPUserData sharedInstance].badgenum = [alertDic[@"badge"] intValue];
-			[QPUserData sharedInstance].interactionnum = [alertDic[@"interaction"] intValue];
-			[QPUserData sharedInstance].allnum = [QPUserData sharedInstance].alertnum + [QPUserData sharedInstance].badgenum + [QPUserData sharedInstance].interactionnum;
-		}
-	}
+//	if (alertDic) {
+//		if (alertDic[@"alert"]) {
+//			[QPUserData sharedInstance].alertnum = [alertDic[@"alert"] intValue];
+//			[QPUserData sharedInstance].badgenum = [alertDic[@"badge"] intValue];
+//			[QPUserData sharedInstance].interactionnum = [alertDic[@"interaction"] intValue];
+//			[QPUserData sharedInstance].allnum = [QPUserData sharedInstance].alertnum + [QPUserData sharedInstance].badgenum + [QPUserData sharedInstance].interactionnum;
+//		}
+//	}
 	// 拦截错误信息
     NSInteger responseCmd = [response.content[@"msg_cmd"]integerValue];
     if (responseCmd == 512 && responseCmd == 513 && responseCmd == 514 && responseCmd == 0 && responseCmd == 511) {
