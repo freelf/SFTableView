@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "QPNetAPIManager.h"
+@class SFBaseItem;
 @class SFBaseModel;
 typedef void(^SFModelBlock)(SFBaseModel *);
 @protocol SFBaseModelDelegate <NSObject>
@@ -28,4 +29,9 @@ typedef void(^SFModelBlock)(SFBaseModel *);
 
 -(instancetype)initWithType:(NSInteger)type commond:(NSInteger)commond;
 
+-(void)handleParseData:(SFBaseItem *)item;
+
+-(void)startRequest;
+
+-(void)cancelRequest;
 @end

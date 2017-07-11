@@ -11,7 +11,7 @@
 #import "QPNetworkingConfiguration.h"
 #import "NSURLRequest+QPNetworking.h"
 #import "QPCommonParametersGenerator.h"
-#import "QPAppContext.h"
+//#import "QPAppContext.h"
 @interface QPRequestGenerator ()
 @property (nonatomic, strong) AFHTTPRequestSerializer *httpRequestSerializer;
 @end

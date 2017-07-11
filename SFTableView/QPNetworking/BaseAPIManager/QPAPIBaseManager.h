@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "QPURLResponse.h"
-#import "NSObject+YYModel.h"
 
 @class QPAPIBaseManager;
 typedef NS_ENUM (NSUInteger, QPAPIManagerErrorType){

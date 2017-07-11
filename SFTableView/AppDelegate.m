@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "RefreshTableViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,10 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-//    ViewController *VC = [[ViewController alloc]initWithStyle:UITableViewStylePlain];
-//    self.window.rootViewController = VC;
-//    [self.window makeKeyAndVisible];
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    RefreshTableViewController *VC = [[RefreshTableViewController alloc]initWithStyle:UITableViewStylePlain];
+    self.window.rootViewController = VC;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

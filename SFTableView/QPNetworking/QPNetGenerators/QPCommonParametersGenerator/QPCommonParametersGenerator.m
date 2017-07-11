@@ -8,12 +8,12 @@
 
 #import "QPCommonParametersGenerator.h"
 #import "QPNetworkingConfiguration.h"
-#import "QPUserData.h"
+
 @implementation QPCommonParametersGenerator
 + (NSDictionary *)commonParamsDictionary
 {
     return @{
-             kQPNetworkingMsgUidKey : [NSNumber numberWithInteger:[QPUserData sharedInstance].userId],
+             kQPNetworkingMsgUidKey : [NSNumber numberWithInteger:1],
              kQPNetworkingMsgUimKey : [NSNumber numberWithInt:1],
              kQPNetworkingMsgMd5Key : [NSNumber numberWithInt:5],
              kQPNetworkingMsgVerKey : [NSNumber numberWithInt:10000],

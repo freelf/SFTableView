@@ -25,6 +25,14 @@
     }
     return nil;
 }
+-(void)appendItem:(SFTableViewBaseItem *)item
+{
+    NSLog(@"appendItem");
+}
+-(void)clearAllItems
+{
+    NSLog(@"clearAllItems");
+}
 #pragma mark - UITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
