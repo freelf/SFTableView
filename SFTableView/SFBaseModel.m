@@ -14,7 +14,20 @@
     if (self = [super init]) {
         self.serverApi = [[QPNetAPIManager alloc]initWithType:type commond:commond];
         self.serverApi.delegate = self;
+        self.serverApi.paramSource = self;
     }
     return self;
+}
+-(NSDictionary *)paramsForApi:(QPAPIBaseManager *)manager
+{
+    return self.parameters;
+}
+-(void)managerCallAPIDidSuccess:(QPAPIBaseManager *)manager
+{
+    
+}
+-(void)managerCallAPIDidFailed:(QPAPIBaseManager *)manager
+{
+    
 }
 @end
