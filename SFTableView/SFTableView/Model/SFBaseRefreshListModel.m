@@ -15,12 +15,16 @@
     __weak typeof(self) wself = self;
     self.completionBlock = ^(SFBaseModel *model) {
         typeof(self) sself = wself;
-        if (sself.isRefresh && [sself.delegate respondsToSelector:@selector(refreshRequestDidSuccess)]) {
-            [sself.delegate refreshRequestDidSuccess];
-        }else if (!sself.isRefresh && [sself.delegate respondsToSelector:@selector(loadMoreRequestDidSuccess)]){
-            [sself.delegate loadMoreRequestDidSuccess];
+        if (sself.serverApi.errorType == QPAPIManagerErrorTypeSuccess) {
+            if (sself.isRefresh && [sself.delegate respondsToSelector:@selector(refreshRequestDidSuccess)]) {
+                [sself.delegate refreshRequestDidSuccess];
+            }else if (!sself.isRefresh && [sself.delegate respondsToSelector:@selector(loadMoreRequestDidSuccess)]){
+                [sself.delegate loadMoreRequestDidSuccess];
+            }
+            [sself.delegate handleAfterRequestFinish];
+        }else{
+            [sself.delegate handleAfterRequestFinish];
         }
-        [sself.delegate handleAfterRequestFinish];
         sself.isRefresh = NO;
     };
 }

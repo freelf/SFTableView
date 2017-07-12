@@ -27,6 +27,7 @@ typedef void(^SFModelBlock)(SFBaseModel *);
 
 @property (nonatomic, strong) NSDictionary *parameters;
 
+
 -(instancetype)initWithType:(NSInteger)type commond:(NSInteger)commond;
 
 -(void)handleParseData:(SFBaseItem *)item;

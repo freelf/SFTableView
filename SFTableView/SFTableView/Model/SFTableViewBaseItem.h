@@ -6,9 +6,9 @@
 //  Copyright © 2017年 张东坡. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "SFBaseItem.h"
 FOUNDATION_EXTERN CGFloat const cellInvalidHeight;
-@interface SFTableViewBaseItem : NSObject
+@interface SFTableViewBaseItem : SFBaseItem
 @property (nonatomic, assign) CGFloat cellHeight;
 
 
